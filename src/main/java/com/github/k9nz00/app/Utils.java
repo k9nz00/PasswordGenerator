@@ -14,7 +14,7 @@ public class Utils {
         if (args.length != 0) {
             try {
                 passwordsCount = Integer.parseInt(args[0]);
-            } catch (NumberFormatException e) {
+            } catch (Exception e) {
                 System.out.print("can't parse value from data: {}");
                 System.out.println(Arrays.toString(args));
             }
@@ -29,7 +29,7 @@ public class Utils {
         if (args.length != 0) {
             try {
                 passwordsCount = Integer.parseInt(args[1]);
-            } catch (NumberFormatException e) {
+            } catch (Exception e) {
                 System.out.print("can't parse value from data: {}");
                 System.out.println(Arrays.toString(args));
             }

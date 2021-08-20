@@ -16,8 +16,6 @@ public class Utils {
                 passwordsCount = Integer.parseInt(args[0]);
             } catch (Exception e) {
                 passwordsCount = 5;
-                System.out.print("can't parse value from data: {}");
-                System.out.println(Arrays.toString(args));
             }
         }
         return passwordsCount;
@@ -30,8 +28,6 @@ public class Utils {
                 passwordsLength = Integer.parseInt(args[1]);
             } catch (Exception e) {
                 passwordsLength = 12;
-                System.out.print("can't parse value from data: {}");
-                System.out.println(Arrays.toString(args));
             }
         }
         return passwordsLength;

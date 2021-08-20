@@ -15,28 +15,26 @@ public class Utils {
             try {
                 passwordsCount = Integer.parseInt(args[0]);
             } catch (Exception e) {
+                passwordsCount = 5;
                 System.out.print("can't parse value from data: {}");
                 System.out.println(Arrays.toString(args));
             }
-        } else {
-            passwordsCount = 5;
         }
         return passwordsCount;
     }
 
     public static int getPasswordLength(String[] args) {
-        int passwordsCount = 0;
+        int passwordsLength = 0;
         if (args.length != 0) {
             try {
-                passwordsCount = Integer.parseInt(args[1]);
+                passwordsLength = Integer.parseInt(args[1]);
             } catch (Exception e) {
+                passwordsLength = 12;
                 System.out.print("can't parse value from data: {}");
                 System.out.println(Arrays.toString(args));
             }
-        } else {
-            passwordsCount = 12;
         }
-        return passwordsCount;
+        return passwordsLength;
     }
 
     public static List<String> getSymbols() {

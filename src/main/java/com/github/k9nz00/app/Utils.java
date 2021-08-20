@@ -17,6 +17,8 @@ public class Utils {
             } catch (Exception e) {
                 passwordsCount = 5;
             }
+        } else {
+            passwordsCount = 5;
         }
         return passwordsCount;
     }
@@ -29,6 +31,8 @@ public class Utils {
             } catch (Exception e) {
                 passwordsLength = 12;
             }
+        } else {
+            passwordsLength = 12;
         }
         return passwordsLength;
     }

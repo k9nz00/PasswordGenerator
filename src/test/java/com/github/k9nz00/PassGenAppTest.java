@@ -1,6 +1,5 @@
 package com.github.k9nz00;
 
-import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -15,6 +14,5 @@ public class PassGenAppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
     }
 }
